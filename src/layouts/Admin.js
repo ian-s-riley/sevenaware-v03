@@ -1,6 +1,7 @@
 import React from "react";
 import cx from "classnames";
 import { Switch, Route, Redirect } from "react-router-dom";
+import { withAuthenticator } from '@aws-amplify/ui-react'
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
@@ -22,7 +23,7 @@ var ps;
 
 const useStyles = makeStyles(styles);
 
-function Dashboard(props) {
+function Admin(props) {
   const { ...rest } = props;
   // states and functions
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -198,4 +199,4 @@ function Dashboard(props) {
   );
 }
 
-export default Dashboard
+export default withAuthenticator(Admin);
