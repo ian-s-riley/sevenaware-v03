@@ -25,6 +25,11 @@ import AdminLayout from "layouts/Admin.js";
 
 import "assets/scss/material-dashboard-pro-react.scss?v=1.9.0";
 
+//aws amplify for auth
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config);
+
 const hist = createBrowserHistory();
 
 ReactDOM.render(

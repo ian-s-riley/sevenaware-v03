@@ -22,7 +22,7 @@ var ps;
 
 const useStyles = makeStyles(styles);
 
-export default function Dashboard(props) {
+function Dashboard(props) {
   const { ...rest } = props;
   // states and functions
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -197,3 +197,5 @@ export default function Dashboard(props) {
     </div>
   );
 }
+
+export default Dashboard
