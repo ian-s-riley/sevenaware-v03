@@ -71,7 +71,8 @@ var dashRoutes = [
         mini: "RS",
         rtlMini: "صو",
         component: RTLSupport,
-        layout: "/rtl"
+        layout: "/rtl",
+        invisible: true 
       },
       {
         path: "/timeline-page",
@@ -80,7 +81,8 @@ var dashRoutes = [
         mini: "T",
         rtlMini: "تي",
         component: TimelinePage,
-        layout: "/admin"
+        layout: "/admin",
+        invisible: true 
       },
       {
         path: "/login-page",
