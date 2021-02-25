@@ -61,7 +61,8 @@ var dashRoutes = [
         mini: "PP",
         rtlMini: "ع",
         component: PricingPage,
-        layout: "/auth"
+        layout: "/auth",
+        invisible: true 
       },
       {
         path: "/rtl-support-page",

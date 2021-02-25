@@ -161,6 +161,7 @@ class Sidebar extends React.Component {
             [classes.collapseItemMiniRTL]: rtlActive
           });
         return (
+          !prop.invisible && (
           <ListItem
             key={key}
             className={cx(
@@ -211,6 +212,7 @@ class Sidebar extends React.Component {
               </List>
             </Collapse>
           </ListItem>
+          )
         );
       }
       const innerNavLinkClasses =
