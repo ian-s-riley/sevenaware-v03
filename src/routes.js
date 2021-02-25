@@ -254,7 +254,8 @@ var dashRoutes = [
         mini: "VF",
         rtlMini: "تو",
         component: ValidationForms,
-        layout: "/admin"
+        layout: "/admin",
+        invisible: true
       },
       {
         path: "/wizard",
